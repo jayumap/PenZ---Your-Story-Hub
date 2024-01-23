@@ -237,7 +237,9 @@ footer {
 
 /* posts */
 
-.postsContainer {
+.postsContainer,
+.authorPostsContainer,
+.categoryPostsContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
@@ -288,4 +290,47 @@ footer {
   aspect-ratio: 1/1;
   border-radius: var(--radius-1);
   overflow: hidden;
+}
+
+
+
+
+/* post detail */
+/* post detail */
+.postDetail {
+  width: var(--form-width);
+  max-width: 800px; 
+  background-color: var(--color-white);
+  margin: 4.5rem auto; 
+  padding: 1rem; 
+  border-radius: var(--radius-1);
+  transition: var(--transition);
+}
+
+.postDetail:hover {
+  box-shadow: 0 1.5rem 2rem rgb(0, 0, 0, 0.1);
+}
+
+.postDetailHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.postDetailButtons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.postDetailThumbnail {
+  margin: 1rem 0;
+  max-height: 40rem;
+  overflow: hidden;
+  border-radius: var(--radius-1);
+}
+
+.postDetail p {
+  margin-bottom: 1rem;
+  text-align: justify;
 }

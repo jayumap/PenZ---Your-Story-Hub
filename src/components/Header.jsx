@@ -13,7 +13,7 @@ function Header() {
         </Link>
         <ul className="navMenu">
           <li>
-            <Link to={"/profile"}>Raj Sharma</Link>
+            <Link to={"/profile"}>Raj Patil</Link>
           </li>
           <li>
             <Link to={"/create"}>Create Post</Link>
