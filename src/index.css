@@ -25,6 +25,10 @@
   --radius-2: 2rem;
 }
 
+::selection {
+  color: var(--color-primary);
+}
+
 * {
   margin: 0;
   padding: 0;
