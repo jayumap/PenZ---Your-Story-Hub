@@ -18,7 +18,7 @@ const Register = () => {
   return (
     <section className="register">
       <div className="container">
-        <h2>Sign Up</h2>
+        <h2>Sign Up!</h2>
         <form className="form registerForm">
           <p className="formErrorMessage">This is an error message</p>
           <input

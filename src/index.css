@@ -390,6 +390,12 @@ input:hover {
   margin-bottom: 2rem;
 }
 
+.register h2 {
+  text-align: center;
+}
+
+
+
 .register small, .login small {
   display: block;
   margin-top: 1.5rem;
