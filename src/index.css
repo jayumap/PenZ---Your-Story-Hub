@@ -404,3 +404,112 @@ input:hover {
 .register small a, .login small a {
   color: var(--color-primary);
 }
+
+
+
+/* authors page css */
+
+.authorsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.author {
+  background: var(--color-white);
+  padding: 1rem;
+  border-radius: var(--radius-1);
+  display: flex;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+.author:hover {
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.07);
+}
+
+.authorAvatar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border-radius: 0.3rem solid var(--color-bg);
+  overflow: hidden;
+}
+
+.authorAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+.authorInfo p {
+  margin-top: 1rem;
+}
+
+
+/* profile page */
+
+.profileContainer {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.profileDetails {
+  width: 100%;
+}
+
+.avatarWrapper {
+  width: 15rem;
+  aspect-ratio: 1/1;
+  position: relative;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
+
+.profileAvatar {
+  height: 100%;
+  border-radius: 50%;
+  border: 1rem solid var(--color-white);
+  overflow: hidden;
+}
+
+.avatarForm {
+  height: 1rem;
+}
+
+.avatarForm input {
+  visibility: hidden;
+}
+
+.avatarForm label, .profileAvatarBtn {
+  background: var(--color-gray-700);
+  color: var(--color-white);
+  font-size: 1.2rem;
+  position: relative;
+  right: 2rem;
+  bottom: 1.4rem;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.profileAvatarBtn {
+  cursor: pointer;
+  padding: 0;
+  font-size: 2rem;
+  background: var(--color-primary);
+}
+
+.profileDetails h1 {
+  margin-top: 1.5rem;
+}
+
+.form.profileForm {
+  margin-top: 3rem;
+  margin-inline: auto;
+  width: var(--form-width);
+}

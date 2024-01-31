@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import Avatar1 from "../images/avatar1.jpg";
+import Avatar1 from "../images/avatar8.jpg";
 import Avatar2 from "../images/avatar2.jpg";
 import Avatar3 from "../images/avatar3.jpg";
-import Avatar4 from "../images/avatar4.jpg";
-import Avatar5 from "../images/avatar5.jpg";
+import Avatar4 from "../images/avatar15.jpg";
+import Avatar5 from "../images/avatar13.jpg";
 import { Link } from "react-router-dom";
 import Home from "./Home";
 
@@ -18,7 +18,7 @@ const authorsData = [
 ];
 
 const Authors = () => {
-  const [authors, setAuthors] = useState([]);
+  const [authors, setAuthors] = useState(authorsData);
   return (
     <section className="authors">
       {authors.length > 0 ? (
@@ -42,7 +42,7 @@ const Authors = () => {
           })}
         </div>
       ) : (
-        <h2 className="center">No authors found!</h2>
+        <h2 className="center">No users found!</h2>
       )}
     </section>
   );
