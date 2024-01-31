@@ -6,6 +6,7 @@ import Avatar3 from "../images/avatar3.jpg";
 import Avatar4 from "../images/avatar4.jpg";
 import Avatar5 from "../images/avatar5.jpg";
 import { Link } from "react-router-dom";
+import Home from "./Home";
 
 
 const authorsData = [
@@ -17,14 +18,14 @@ const authorsData = [
 ];
 
 const Authors = () => {
-  const [authors, setAuthors] = useState(authorsData);
+  const [authors, setAuthors] = useState([]);
   return (
     <section className="authors">
-      {authors.length > 5 ? (
+      {authors.length > 0 ? (
         <div className="container authorsContainer">
           {authors.map(({ id, avatar, name, posts }) => {
             return (
-              <Link key={id} to={`/posts/users/${id}`}>
+              <Link key={id} to={`/posts/users/${id}`} className="author">
                 <div className="authorAvatar">
                   <img src={avatar} alt={`Image of ${name}`} />
                 </div>
@@ -41,7 +42,7 @@ const Authors = () => {
           })}
         </div>
       ) : (
-        <h2>No users found!</h2>
+        <h2 className="center">No authors found!</h2>
       )}
     </section>
   );
