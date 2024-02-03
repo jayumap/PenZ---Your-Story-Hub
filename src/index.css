@@ -510,5 +510,6 @@ input:hover {
 
 .form.profileForm {
   margin-top: 3rem;
+  margin-inline: auto;
   width: var(--form-width);
 }
