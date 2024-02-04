@@ -5,7 +5,7 @@ import { FaCheck } from "react-icons/fa6";
 import Avatar from '../images/avatar15.jpg'
 
 const UserProfile = () => {
-  const [avatar, setAvatar] = useState('')
+  const [avatar, setAvatar] = useState(Avatar)
   return (
     <section className='profile'>
       <div className="container profileContainer">
@@ -13,7 +13,7 @@ const UserProfile = () => {
         <div className="profileDetails">
           <div className="avatarWrapper">
             <div className="profileAvatar">
-              <img src={Avatar} alt="" />
+              <img src={avatar} alt="" />
             </div>
             {/* {Form to update avatar} */}
             <form className='avatarForm'>
@@ -23,6 +23,17 @@ const UserProfile = () => {
             <button className='profileAvatarBtn'><FaCheck /></button>
           </div>
           <h1>Raj Patil</h1>
+
+          <form action="" className="form profileForm">
+            <p action="" className="formErrorMessage">
+              This is an error message!
+            </p>
+            <input type="text" placeholder='Email' name='email' value={userData.email} onClick={changeInputHandler} autoFocus/>
+            <input type="password" placeholder='password' name="Password" value={userData.password} onChange={changeInputHandler} />
+            <button type="submit" className='btn primary'>Login</button>
+          </form>
+          <small>Don't have an account?
+            <Link to="/register"></Link>Sign Up</small>
         </div>
       </div>
     </section>
