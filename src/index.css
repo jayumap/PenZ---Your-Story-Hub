@@ -513,3 +513,95 @@ input:hover {
   margin-inline: auto;
   width: var(--form-width);
 }
+
+/* dashboard page css  */
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.dashboardPost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--color-white);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius-1);
+}
+
+.dashboardPostInfo {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.dashboardPostThumbnail {
+  width: 4rem;
+  border-radius: var(--radius-1);
+  overflow: hidden;
+}
+
+.dashboardPostActions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.q1Editor {
+  overflow: scroll;
+  background: var(--color-white);
+  height: 10rem !important; 
+}
+
+
+/* responsive design */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: var(--container-width-md);
+  }
+
+  /* navbar */
+  .navContainer {
+    position: relative;
+  }
+
+  .navMenu {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .navMenu li {
+    width: 100%;
+    box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.26);
+  }
+  
+  .navMenu li a {
+    display: block;
+    background: var(--color-white);
+    padding: 0.85rem 2.5rem;
+  }
+
+  .navToggleBtn {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

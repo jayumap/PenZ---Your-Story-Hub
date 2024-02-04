@@ -10,7 +10,7 @@ const Dashboard = () => {
         <div className="container dashboardContainer">
           {posts.map((post) => {
             return (
-              <article key={post.id} className="]dashboardPost">
+              <article key={post.id} className="dashboardPost">
                 <div className="dashboardPostInfo">
                   <div className="dashboardPostThumbnail">
                     <img src={post.thumbnail} alt="" />
