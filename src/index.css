@@ -487,9 +487,9 @@ input:hover {
   background: var(--color-gray-700);
   color: var(--color-white);
   font-size: 1.2rem;
-  position: relative;
-  right: 2rem;
-  bottom: 1.4rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 0.5rem;
   width: 3rem;
   height: 3rem;
   display: grid;

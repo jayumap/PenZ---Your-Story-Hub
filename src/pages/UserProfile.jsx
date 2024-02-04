@@ -51,24 +51,7 @@ const UserProfile = () => {
             <input type="password" placeholder="Current Password" value={currentPassword} onChange={e => setCurrentPassword(e.target.value)}/>
             <input type="password" placeholder="New Password" value={newPassword} onChange={e => setNewPassword(e.target.value)}/>
             <input type="password" placeholder="Confirm New Password" value={confirmNewPassword} onChange={e => setConfirmNewPassword(e.target.value)}/>
-            {/* <input
-              type="text"
-              placeholder="Email"
-              name="email"
-              value={userData.email}
-              onClick={changeInputHandler}
-              autoFocus
-            />
-            <input
-              type="password"
-              placeholder="password"
-              name="Password"
-              value={userData.password}
-              onChange={changeInputHandler}
-            />
-            <button type="submit" className="btn primary">
-              Login
-            </button> */}
+            <button type="submit" className="btn primary">Update Details</button>
           </form>
           <small>
             Don't have an account?
