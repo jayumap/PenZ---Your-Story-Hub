@@ -559,15 +559,15 @@ input:hover {
 /* responsive design */
 @media screen and (max-width: 800px) {
   h1 {
-    font-size: 4.5rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   }
 
   .container {
@@ -590,8 +590,30 @@ input:hover {
   .navMenu li {
     width: 100%;
     box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.26);
+    animation: dropDown 500ms ease forwards;
+    opacity: 0;
+    transform: rotateX(90deg);
+    transform-origin: top;
+  }
+
+  @keyframes dropDown {
+    to  {
+      opacity: 1;
+      transform: rotate(0);
+    }
+  }
+
+  .navMenu li:nth-child(2) {
+    animation-delay: 300ms;
   }
   
+  .navMenu li:nth-child(3) {
+    animation-delay: 300ms;
+  }
+  .navMenu li:nth-child(4) {
+    animation-delay: 300ms;
+  }
+    
   .navMenu li a {
     display: block;
     background: var(--color-white);
@@ -603,5 +625,50 @@ input:hover {
     background: transparent;
     font-size: 1.5rem;
     cursor: pointer;
+  }
+
+  .postsContainer {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .footerCategories{
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .postDetail {
+    width: 100%;
+    background: transparent;
+    padding: 0;
+  }
+
+  .register, .login, .createPost {
+    width: 100%;
+  }
+
+  .postDetail h1 {
+    margin-top: 1rem;
+  }
+
+  .form.profileForm {
+    margin-top: 2.5rem;
+    width: 100%;
+  }
+
+  .authorsContainer {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .dashboardPost {
+    flex-direction: column;
+  }
+
+  .dashboardPostInfo {
+    gap: 1.5rem;
+  }
+  .dashboardPostThumbnail {
+    width: 5rem;
   }
 }

@@ -18,23 +18,23 @@ function Header() {
   return (
     <nav>
       <div className="container navContainer">
-        <Link to="/" className="navLogo">
+        <Link to="/" className="navLogo" onClick={closeNavHandler}>
           <img src={Logo} alt="Navbar Logo" />
         </Link>
-        <ul className="navMenu">
+        {isNavShowing && <ul className="navMenu">
           <li>
-            <Link to={"/profile/sdfsdf"}>Raj Patil</Link>
+            <Link to={"/profile/sdfsdf"} onClick={closeNavHandler}>Raj Patil</Link>
           </li>
           <li>
-            <Link to={"/create"}>Create Post</Link>
+            <Link to={"/create"} onClick={closeNavHandler}>Create Post</Link>
           </li>
           <li>
-            <Link to={"/authors"}>Authors</Link>
+            <Link to={"/authors"} onClick={closeNavHandler}>Authors</Link>
           </li>
           <li>
-            <Link to={"/logout"}>Logout</Link>
+            <Link to={"/logout"} onClick={closeNavHandler}>Logout</Link>
           </li>
-        </ul>
+        </ul>}
         <button
           className="navToggleBtn"
           onClick={() => setIsNavShowing(!isNavShowing)}
